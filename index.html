@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Elias's Portfolio</title>
+    <style>
+      /* Main Page Layout - Dark Mode */
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #121212;
+        color: #e0e0e0;
+        margin: 0;
+        padding: 0;
+      }
+      .wrapper {
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 30px;
+        background-color: #1e1e1e;
+        border-radius: 8px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+      }
+      h1, h2, h3 {
+        color: #ffffff;
+      }
+      a {
+        color: #66b3ff;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      hr {
+        border: 0;
+        height: 1px;
+        background: #333;
+        margin: 40px 0;
+      }
+      
+      /* Make sure SVG icons (GitHub/LinkedIn) stay visible */
+      svg {
+        color: #e0e0e0;
+      }
+      
+      .image-container {
+        width: 100%;
+        padding-top: 56.25%; /* 16:9 Aspect Ratio */
+        position: relative;
+        background-color: #252526; /* Matches your dark theme */
+        border-radius: 4px;
+        overflow: hidden;
+        margin-bottom: 15px;
+      }
+
+      /* Project Scroller CSS - Dark Mode */
+      .project-card {
+        display: none; 
+        padding: 20px;
+        text-align: center;
+        background: #2a2a2a;
+        border: 1px solid #444;
+        border-radius: 12px;
+        min-height: 300px;
+      }
+      .project-card img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* This crops the image to fill the frame perfectly */
+      }
+      .fade {
+        animation: fadeAnim 1.5s;
+      }
+      @keyframes fadeAnim {
+        from {opacity: .4} to {opacity: 1}
+      }
+      .button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #4a90e2;
+        color: #fff;
+        border-radius: 5px;
+        margin-top: 15px;
+        font-weight: bold;
+      }
+      .button:hover {
+        background-color: #357abd;
+        text-decoration: none;
+        color: #fff;
+      }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Elias Clawson</h1>
+<h3>Systems Engineer | Computer Engineering</h3>
+<p>Bachelor of Science in Computer Engineering (BYU)</p>
+<p>I am a computer engineer specializing in <strong>automation pipelines</strong>, <strong>data-driven workflows</strong>, and <strong>scalable cloud systems</strong>. My focus is on eliminating manual overhead and optimizing system performance through robust software architecture.</p>
+<h3>Links</h3>
+<p><a href="https://github.com/eliasclawson" target="_blank" aria-label="GitHub">
+    <svg height="32" width="32" fill="currentColor" viewBox="0 0 16 16">
+        <path d="M8 0C3.58 0 0 3.58 0 8a8 8 0 005.47 7.59c.4.07.55-.17.55-.38v-1.33C4.07 14.41 3.6 13.13 3.6 13.13c-.36-.91-.88-1.15-.88-1.15-.72-.49.06-.48.06-.48.8.06 1.22.82 1.22.82.7 1.2 1.84.85 2.29.65.07-.51.27-.85.49-1.05-1.75-.2-3.58-.88-3.58-3.93 0-.87.31-1.58.82-2.14-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.7 7.7 0 014 0c1.53-1.03 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.14 0 3.06-1.84 3.73-3.6 3.93.28.24.53.72.53 1.45v2.15c0 .21.15.46.55.38A8 8 0 0016 8c0-4.42-3.58-8-8-8z"/>
+    </svg>
+</a>
+<a href="https://www.linkedin.com/in/elias-clawson" target="_blank" aria-label="LinkedIn" style="margin-left: 15px;">
+    <svg height="32" width="32" fill="currentColor" viewBox="0 0 16 16">
+        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zM4.943 13.2V6.169H2.542V13.2h2.401zM3.743 5.193c.837 0 1.357-.554 1.357-1.248-.015-.708-.52-1.249-1.34-1.249-.82 0-1.357.541-1.357 1.249 0 .694.52 1.248 1.31 1.248h.03zm4.09 8.007V9.359c0-.206.015-.413.075-.56.164-.413.54-.84 1.17-.84.825 0 1.155.633 1.155 1.56v3.681h2.401V9.26c0-2.099-1.11-3.074-2.589-3.074-1.207 0-1.735.826-2.034 1.401h.015V6.17H5.844c.03.634 0 7.03 0 7.03h2.402z"/>
+    </svg>
+</a></p>
+<hr />
+<h2>Core Expertise</h2>
+<ul>
+<li><strong>Automation &amp; Efficiency:</strong> Developed data processing pipelines at <strong>Northrop Grumman</strong>, reducing turnaround time for link margin analysis from several days to ~1 hour.</li>
+<li><strong>Full-Stack Development:</strong> Led a team of 10 developers at <strong>BYU OIT</strong> to deploy production systems used by thousands, utilizing JavaScript and SQL.</li>
+<li><strong>Cloud Architecture:</strong> Transitioning into Cloud Engineering (AWS SAA in progress) with hands-on experience in <strong>S3, CloudFront, Lambda, and DynamoDB</strong> for serverless delivery[cite: 24, 50].</li>
+<li><strong>System Modeling:</strong> Skilled in modeling distributed system behaviors (ground/air/space) and refactoring simulation tooling for 50% runtime reductions.</li>
+</ul>
+<h2>Skills</h2>
+<ul>
+<li><strong>Cloud:</strong> AWS, Terraform, Networking (VPC/Subnets), Security (IAM).</li>
+<li><strong>Programming:</strong> Python, Matlab, JavaScript, C.</li>
+<li><strong>Tools:</strong> Linux, Docker, Git, SQL, Agile.</li>
+</ul>
+
+        <hr>
+        <h2>Featured Projects</h2>
+        <div id="project-scroller">Loading projects...</div>
+    </div>
+
+    <script>
+      let projectIndex = 0;
+
+      function showProjects() {
+        let cards = document.getElementsByClassName("project-card");
+        if (cards.length === 0) return; 
+        
+        for (let i = 0; i < cards.length; i++) {
+          cards[i].style.display = "none";  
+        }
+        projectIndex++;
+        if (projectIndex > cards.length) {projectIndex = 1}    
+        cards[projectIndex-1].style.display = "block";  
+        setTimeout(showProjects, 6000); 
+      }
+        
+      async function loadProjects() {
+        try {
+            const response = await fetch('https://vqjoh7uzdv4p7pw4hlubjyph4y0hjpzs.lambda-url.us-east-1.on.aws/');
+            const projects = await response.json();
+            const container = document.getElementById('project-scroller');
+            
+            if (projects.length === 0) {
+                container.innerHTML = "<p>No projects found.</p>";
+                return;
+            }
+
+            container.innerHTML = projects.map(p => `<div class="project-card fade">
+                <div class="image-container">
+                    <img src="${p.ImageURL || 'https://via.placeholder.com/800x400/2a2a2a/e0e0e0?text=No+Image+Available'}" alt="${p.Title}">
+                </div>
+                <h3>${p.Title}</h3>
+                <p>${p.Description}</p>
+                <a href="${p.Link}" class="button" target="_blank">View on GitHub</a>
+              </div>
+            `).join('');
+            
+            showProjects();
+        } catch (error) {
+            console.error("Failed to load projects:", error);
+            document.getElementById('project-scroller').innerHTML = "<p>Error loading projects.</p>";
+        }
+      }
+      
+      loadProjects();
+    </script>
+</body>
+</html>
